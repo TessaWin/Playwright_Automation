@@ -3,7 +3,7 @@ import {getByPlaceholder} from '@playwright/test'
 import {getByRole} from '@playwright/test'
 import { text } from 'stream/consumers'
 
-test('Demo Login Test 1', async({page}) => {
+test('verificationOfElements Test', async({page}) => {
     await page.goto('https://demo.applitools.com/')
 
     await page.locator('[placeholder="Enter your username"]').fill('Tereza')
