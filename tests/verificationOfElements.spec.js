@@ -2,9 +2,10 @@ import {test,expect} from '@playwright/test'
 import {getByPlaceholder} from '@playwright/test'
 import {getByRole} from '@playwright/test'
 import { text } from 'stream/consumers'
+import * as goToTestPage from './steps/goToTestPage.spec.js'
 
 test('verificationOfElements Test', async({page}) => {
-    await page.goto('https://demo.applitools.com/')
+    await goToTestPage(page)
 
     await page.locator('[placeholder="Enter your username"]').fill('Tereza')
     await page.locator('[placeholder="Enter your password"]').fill('1234')
