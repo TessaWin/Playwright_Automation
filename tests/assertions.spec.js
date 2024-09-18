@@ -3,7 +3,7 @@ import {getByPlaceholder} from '@playwright/test'
 import {getByRole} from '@playwright/test'
 import { text } from 'stream/consumers'
 
-test('getAttributeValue Test', async({page}) => {
+test('assertions Test', async({page}) => {
     await page.goto('https://demo.applitools.com/')
     await expect(page).toHaveURL('https://demo.applitools.com/')
 
